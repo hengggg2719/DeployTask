@@ -1,0 +1,17 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CalApp/CalApp.csproj" Id="8de3cbe4-b08c-40b5-ba25-7542a6fa06e8" />
+  <Project Path="CalAppSetup/CalAppSetup.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0" Id="427d4b77-11d2-4929-92a4-611a9554ee60">
+    <Platform Solution="*|Any CPU" Project="x64" />
+  </Project>
+  <Project Path="DeployTask1/DeployTask1.csproj" Id="36843736-e6a4-46b0-920f-3df77bc9d100" />
+  <Project Path="DeployTask1Setup/DeployTask1Setup.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0">
+    <Platform Solution="*|Any CPU" Project="x64" />
+  </Project>
+  <Project Path="MathLib/MathLib.csproj" Id="81bdb421-0086-47b5-aa69-39a4909f9afd" />
+</Solution>

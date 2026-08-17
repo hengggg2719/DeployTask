@@ -1,0 +1,24 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+			<Component Id="MainExecutable" Guid="*">
+				<File Id="CalAppEXE" Source="$(var.CalApp.TargetDir)CalApp.exe" KeyPath="yes" />
+			</Component>
+			<Component Id="MainAssembly" Guid="*">
+				<File Id="CalAppDLL" Source="$(var.CalApp.TargetDir)CalApp.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="RuntimeConfig" Guid="*">
+				<File Id="CalAppRuntimeConfig" Source="$(var.CalApp.TargetDir)CalApp.runtimeconfig.json" KeyPath="yes" />
+			</Component>
+			<Component Id="DepsJson" Guid="*">
+				<File Id="CalAppDepsJson" Source="$(var.CalApp.TargetDir)CalApp.deps.json" KeyPath="yes" />
+			</Component>
+			<Component Id="MathLibDLL" Guid="*">
+				<File Id="MathLibDLL" Source="$(var.CalApp.TargetDir)MathLib.dll" KeyPath="yes" />
+			</Component>
+			<Component Id="NewtonsoftJsonDLL" Guid="*">
+				<File Id="NewtonsoftJsonDLL" Source="$(var.CalApp.TargetDir)Newtonsoft.Json.dll" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
